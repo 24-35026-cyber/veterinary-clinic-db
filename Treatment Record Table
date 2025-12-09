@@ -1,11 +1,11 @@
-CREATE TABLE Medical_Record (
-    record_id INT NOT NULL AUTO_INCREMENT,
-    appointment_id INT NOT NULL,
-    diagnosis TEXT,
-    treatment TEXT,
-    prescription TEXT,
-    date_recorded DATETIME DEFAULT CURRENT_TIMESTAMP,
-
-    PRIMARY KEY (record_id),
-    FOREIGN KEY (appointment_id) REFERENCES Appointment(appointment_id)
+CREATE TABLE treatment (
+    treatment_id INT NOT NULL AUTO_INCREMENT,
+    pet_id INT NOT NULL,
+    diagnosis VARCHAR(255) NOT NULL,
+    treatment_details TEXT DEFAULT NULL,
+    prescription TEXT DEFAULT NULL,
+    vaccine_status VARCHAR(50) DEFAULT NULL,
+    treatment_date DATE NOT NULL,
+    PRIMARY KEY (treatment_id),
+    FOREIGN KEY (pet_id) REFERENCES pet(pet_id)
 );
