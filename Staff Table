@@ -1,0 +1,12 @@
+CREATE TABLE Staff (
+    staff_id INT NOT NULL AUTO_INCREMENT,
+    staff_name VARCHAR(100) NOT NULL,
+    position VARCHAR(50) NOT NULL,      -- e.g., Receptionist, Assistant
+    contact_number VARCHAR(20),
+    email VARCHAR(100),
+    hire_date DATE,
+
+    PRIMARY KEY (staff_id)
+);
+ sorryy naiwan pala HAHAHAH
+Write to Maegan Gaylle Cuevas
